@@ -1,0 +1,7 @@
+## Interface: 120000
+## Title: bruh
+## Notes: Responds with 'bruh' when 'bruh' appears in SAY, RAID, or GUILD chat.
+## Author: I-AM-T3X
+## Version: 1.0.0
+
+bruh.lua
