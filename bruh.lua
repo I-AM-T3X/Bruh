@@ -21,7 +21,7 @@ f:RegisterEvent("CHAT_MSG_GUILD")
 
 -- Cooldown to prevent spam (2s, matches WeakAura)
 local lastTrigger = 0
-local COOLDOWN = 2
+local COOLDOWN = 30
 
 local enabled = true
 
