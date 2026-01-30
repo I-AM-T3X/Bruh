@@ -1,7 +1,7 @@
 ## Interface: 120000
 ## Title: Bruh
-## Notes: Responds with 'bruh' when 'bruh' appears in SAY, RAID, or GUILD chat.
+## Notes: Responds with 'bruh' when 'bruh' appears in PARTY, RAID, or GUILD chat.
 ## Author: I-AM-T3X
-## Version: 1.1.0
+## Version: 1.1.1
 
 bruh.lua
