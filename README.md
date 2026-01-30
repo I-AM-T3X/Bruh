@@ -1,2 +1,2 @@
 # Bruh
-bruh is a simple, lightweight addon that automatically replies “bruh” when someone says “bruh” in SAY, GUILD, or INSTANCE_CHAT. It’s the classic WeakAura behavior, now fully converted into a safe, standalone addon using the modern WoW API. Toggle it on or off anytime with /bruh and enjoy the same fun with no UI clutter.
+bruh is a simple, lightweight addon that automatically replies “bruh” when someone says “bruh” in PARTY, GUILD, or INSTANCE_CHAT. It’s the classic WeakAura behavior, now fully converted into a safe, standalone addon using the modern WoW API. Toggle it on or off anytime with /bruh and enjoy the same fun with no UI clutter.
