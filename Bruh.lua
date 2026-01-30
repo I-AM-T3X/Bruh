@@ -6,22 +6,22 @@ local RESPONSE_MESSAGE = "bruh"
 
 -- Map incoming events to outgoing chat types
 local RESPONSE_BY_EVENT = {
-    CHAT_MSG_SAY   = "SAY",
     CHAT_MSG_RAID  = "RAID",
     CHAT_MSG_GUILD = "GUILD",
+    CHAT_MSG_INSTANCE_CHAT = "INSTANCE_CHAT",
 }
 
 -- Create frame
 local f = CreateFrame("Frame")
 
 -- Register events
-f:RegisterEvent("CHAT_MSG_SAY")
 f:RegisterEvent("CHAT_MSG_RAID")
 f:RegisterEvent("CHAT_MSG_GUILD")
+f:RegisterEvent("CHAT_MSG_INSTANCE_CHAT")
 
--- Cooldown to prevent spam (2s, matches WeakAura)
+-- Cooldown to prevent spam (10s)
 local lastTrigger = 0
-local COOLDOWN = 30
+local COOLDOWN = 10
 
 local enabled = true
 
@@ -38,7 +38,8 @@ f:SetScript("OnEvent", function(_, event, message)
 
     local chatType = RESPONSE_BY_EVENT[event]
     if chatType then
-        SendChatMessage(RESPONSE_MESSAGE, chatType)
+        -- Modern API call
+        C_ChatInfo.SendChatMessage(RESPONSE_MESSAGE, chatType)
     end
 end)
 
