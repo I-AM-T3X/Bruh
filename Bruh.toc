@@ -1,7 +1,8 @@
-## Interface: 120000
+## Interface: 120001, 120005
 ## Title: Bruh
-## Notes: Responds with 'bruh' when 'bruh' appears in PARTY, RAID, or GUILD chat.
+## Notes: Responds with customizable phrases when trigger words appear in RAID, GUILD, or INSTANCE chat.
 ## Author: I-AM-T3X
-## Version: 1.1.1
+## Version: 1.2.1
+## SavedVariables: BruhDB
 
-bruh.lua
+Bruh.lua
