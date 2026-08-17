@@ -50,6 +50,12 @@ f:SetScript("OnEvent", function(_, event, arg1)
     -- Chat message handling
     if not BruhDB.enabled or not arg1 then return end
 
+    -- During boss encounters / Mythic+ runs (Patch 12.0 "Midnight"), Blizzard
+    -- marks chat message text as a "secret value" that addons are not allowed
+    -- to read (string methods like :lower()/:find() will error). There's no
+    -- way around this by design, so just skip processing in that case.
+    if issecretvalue and issecretvalue(arg1) then return end
+
     local message = arg1:lower()
     local trigger = BruhDB.trigger:lower()
     
